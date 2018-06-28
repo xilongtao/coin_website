@@ -1,0 +1,65 @@
+.main-block {
+    position: relative;
+    height: 500px;
+    border: 1px solid #efefef;
+    /*background: -webkit-linear-gradient(left, #8000188f, #800080);*/
+    animation-name:main-block;
+    animation-duration: 1.5s;
+    background: #17529E url(../images/block-bg1.jpg) no-repeat center fixed;
+}
+
+@keyframes main-block {
+    0% {-webkit-linear-gradient(left top, pink, blue, green, purple);}
+    100% {-webkit-linear-gradient(left top, blue, green, purple, pink);}
+}
+@keyframes main-block-pl {
+    0% {left: 0;}
+    100% {left: calc(50% - 150px);}
+}
+@keyframes main-block-pr {
+    0% {left: calc(100% - 300px);}
+    100% {left: calc(50% - 150px);}
+}
+@keyframes main-block-h1 {
+    0% {opacity: 0;transform: scale(0) translate(0, 100%)};
+    100% {opacity: 100%;transform: scale(1) translate(0, 0);}
+}
+
+.main-block h1 {
+    text-align: center;
+    animation-name:main-block-h1;
+    animation-duration: 1.5s;
+
+    position:relative;
+    color: white;
+    font-weight: bold;
+    font-size: 4em;
+
+    transition: font-size 1s;
+}
+.main-block h1:hover {
+    font-size: 4.5em;
+}
+.main-block p {
+    position: relative;
+    text-align:center;
+    color: white;
+    width: 300px;
+    font-size: 2em;
+    transition: left 1s;
+}
+.main-block p.p1 {
+    animation-name:main-block-pl;
+    animation-duration: 1.5s;
+
+    left: calc(50% - 150px);
+}
+.main-block p.p2 {
+    animation-name:main-block-pr;
+    animation-duration: 1.5s;
+
+    left: calc(50% - 150px);
+}
+.main-block p:hover {
+    left: calc(50% - 140px);
+}
