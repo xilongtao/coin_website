@@ -1,0 +1,16 @@
+@keyframes main-block {
+    0% {-webkit-linear-gradient(left top, pink, blue, green, purple);}
+    100% {-webkit-linear-gradient(left top, blue, green, purple, pink);}
+}
+@keyframes main-block-pl {
+    0% {left: 0;}
+    100% {left: calc(50% - 150px);}
+}
+@keyframes main-block-pr {
+    0% {left: calc(100% - 300px);}
+    100% {left: calc(50% - 150px);}
+}
+@keyframes main-block-h1 {
+    0% {opacity: 0;transform: scale(0) translate(0, 100%)};
+    100% {opacity: 100%;transform: scale(1) translate(0, 0);}
+}

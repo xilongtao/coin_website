@@ -1,51 +1,70 @@
+.header-menu {
+    height: 80px;
+    width: 100%;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.header-left {
+    font-size:3rem;
+    width: 30%;
+    float: left;
+}
+.header-right {
+    font-size: 1.5rem;
+    width: 70%;
+    float: left;
+    margin-top: 20px;
+}
+.header-right ul li{
+    width: 100px;
+    float: left;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 1.8rem;
+    margin-left: 30px;
+    position: relative;
+}
+.header-right ul li a {
+    color: white;
+}
+
+
 .main-block {
     position: relative;
-    height: 500px;
-    border: 1px solid #efefef;
-    /*background: -webkit-linear-gradient(left, #8000188f, #800080);*/
+    z-index: 0;
+    height: 600px;
+    background: -webkit-linear-gradient(left top ,#020031 0,#6d3353 100%);
     animation-name:main-block;
     animation-duration: 1.5s;
-    background: #17529E url(../images/block-bg1.jpg) no-repeat center fixed;
+    /*background: #17529E url(../images/block-bg1.jpg) no-repeat center fixed;*/
 }
 
-@keyframes main-block {
-    0% {-webkit-linear-gradient(left top, pink, blue, green, purple);}
-    100% {-webkit-linear-gradient(left top, blue, green, purple, pink);}
-}
-@keyframes main-block-pl {
-    0% {left: 0;}
-    100% {left: calc(50% - 150px);}
-}
-@keyframes main-block-pr {
-    0% {left: calc(100% - 300px);}
-    100% {left: calc(50% - 150px);}
-}
-@keyframes main-block-h1 {
-    0% {opacity: 0;transform: scale(0) translate(0, 100%)};
-    100% {opacity: 100%;transform: scale(1) translate(0, 0);}
-}
-
-.main-block h1 {
-    text-align: center;
+.main-block span {
     animation-name:main-block-h1;
     animation-duration: 1.5s;
 
+    display: block;
     position:relative;
+    text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 4rem;
+    padding-top: 150px;
 
     transition: font-size 1s;
 }
 .main-block h1:hover {
-    font-size: 4.5em;
+    font-size: 4.5rem;
 }
 .main-block p {
     position: relative;
     text-align:center;
     color: white;
     width: 300px;
-    font-size: 2em;
+    font-size: 1.8rem;
     transition: left 1s;
 }
 .main-block p.p1 {
@@ -53,6 +72,7 @@
     animation-duration: 1.5s;
 
     left: calc(50% - 150px);
+    margin-top: 100px;
 }
 .main-block p.p2 {
     animation-name:main-block-pr;
