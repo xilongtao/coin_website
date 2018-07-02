@@ -17,17 +17,29 @@
     width: 70%;
     float: left;
     margin-top: 20px;
+
+    animation-name: main-block-h1;
+    animation-duration: 1.5s;
 }
 .header-right ul li{
-    width: 100px;
     float: left;
     list-style-type: none;
     padding: 5px;
     font-size: 1.8rem;
     margin-left: 30px;
+    
     position: relative;
+    transition: left 1s;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s; 
+    left: 0;
+}
+ul.header-menu-ul li:hover {
+    left: 10px;
 }
 .header-right ul li a {
+    position: relative;
     color: white;
 }
 
@@ -35,8 +47,11 @@
 .main-block {
     position: relative;
     z-index: 0;
-    height: 600px;
-    background: -webkit-linear-gradient(left top ,#020031 0,#6d3353 100%);
+    height: 550px;
+    background: linear-gradient(left top ,#020031,#6d3353);
+    background: -webkit-linear-gradient(left top ,#020031,#6d3353);
+    background: -moz-linear-gradient(left top ,#020031,#6d3353);
+    background: -o-linear-gradient(left top ,#020031,#6d3353);
     animation-name:main-block;
     animation-duration: 1.5s;
     /*background: #17529E url(../images/block-bg1.jpg) no-repeat center fixed;*/
@@ -56,30 +71,46 @@
 
     transition: font-size 1s;
 }
-.main-block h1:hover {
+.main-block span:hover {
     font-size: 4.5rem;
 }
 .main-block p {
     position: relative;
     text-align:center;
     color: white;
-    width: 300px;
+    width: 700px;
     font-size: 1.8rem;
     transition: left 1s;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+}
+
+.main-block p.p1, .main-block p.p2, .main-block p.p3 {
+    /*animation-name:main-block-pr;
+    animation-duration: 1.5s;*/
+
+    left: calc(50% - 350px);
+    left: -webkit-calc(50% - 350px);
+    left: -moz-calc(50% - 350px);
+    left: -o-calc(50% - 350px);
 }
 .main-block p.p1 {
     animation-name:main-block-pl;
     animation-duration: 1.5s;
-
-    left: calc(50% - 150px);
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .main-block p.p2 {
     animation-name:main-block-pr;
     animation-duration: 1.5s;
-
-    left: calc(50% - 150px);
+}
+.main-block p.p3 {
+    animation-name:main-block-pl;
+    animation-duration: 1.5s;
 }
 .main-block p:hover {
-    left: calc(50% - 140px);
+    left: calc(50% - 340px);
+    left: -webkit-calc(50% - 340px);
+    left: -moz-calc(50% - 340px);
+    left: -o-calc(50% - 340px);
 }

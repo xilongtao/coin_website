@@ -1,16 +1,70 @@
+/*颜色渐变*/
 @keyframes main-block {
+    0% {linear-gradient(left top, pink, blue, green, purple);}
+    100% {linear-gradient(left top, blue, green, purple, pink);}
+}
+@-webkit-keyframes main-block {
     0% {-webkit-linear-gradient(left top, pink, blue, green, purple);}
     100% {-webkit-linear-gradient(left top, blue, green, purple, pink);}
 }
+@-moz-keyframes main-block {
+    0% {-moz-linear-gradient(left top, pink, blue, green, purple);}
+    100% {-moz-linear-gradient(left top, blue, green, purple, pink);}
+}
+@-o-keyframes main-block {
+    0% {-o-linear-gradient(left top, pink, blue, green, purple);}
+    100% {-o-linear-gradient(left top, blue, green, purple, pink);}
+}
+/*文字从左边进入*/
 @keyframes main-block-pl {
     0% {left: 0;}
-    100% {left: calc(50% - 150px);}
+    100% {left: calc(50% - 350px);}
 }
+@-webkit-keyframes main-block-pl {
+    0% {left: 0;}
+    100% {left: -webkit-calc(50% - 350px);}
+}
+@-moz-keyframes main-block-pl {
+    0% {left: 0;}
+    100% {left: -moz-calc(50% - 350px);}
+}
+@-o-keyframes main-block-pl {
+    0% {left: 0;}
+    100% {left: -o-calc(50% - 350px);}
+}
+/*文字从右边进入*/
 @keyframes main-block-pr {
-    0% {left: calc(100% - 300px);}
-    100% {left: calc(50% - 150px);}
+    0% {left: calc(100% - 700px);}
+    100% {left: calc(50% - 350px);}
 }
+@-webkit-keyframes main-block-pr {
+    0% {left: -webkit-calc(100% - 700px);}
+    100% {left: -webkit-calc(50% - 350px);}
+}
+@-moz-keyframes main-block-pr {
+    0% {left: -moz-calc(100% - 700px);}
+    100% {left: -moz-calc(50% - 350px);}
+}
+@-o-keyframes main-block-pr {
+    0% {left: -o-calc(100% - 700px);}
+    100% {left: -o-calc(50% - 350px);}
+}
+
+
+/*从底部20%淡出动画*/
 @keyframes main-block-h1 {
-    0% {opacity: 0;transform: scale(0) translate(0, 100%)};
-    100% {opacity: 100%;transform: scale(1) translate(0, 0);}
+    0% {opacity: 0;transform: scale(0.8) translate(0, 20%)};
+    100% {opacity: 1;transform: scale(1) translate(0, 0);}
+}
+@-webkit-keyframes main-block-h1 {
+    0% {opacity: 0;-webkit-transform: scale(0.8) translate(0, 20%)};
+    100% {opacity: 1;-webkit-transform: scale(1) translate(0, 0);}
+}
+@-moz-keyframes main-block-h1 {
+    0% {opacity: 0;-moz-transform: scale(0.8) translate(0, 20%)};
+    100% {opacity: 1;-moz-transform: scale(1) translate(0, 0);}
+}
+@-o-keyframes main-block-h1 {
+    0% {opacity: 0;-o-transform: scale(0.8) translate(0, 20%)};
+    100% {opacity: 1;-o-transform: scale(1) translate(0, 0);}
 }
