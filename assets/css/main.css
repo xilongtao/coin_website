@@ -119,6 +119,7 @@ ul.header-menu-ul li:hover {
 .feature {
     margin-top: 50px;
     position: relative;
+    visibility: hidden;
 }
 .feature div {
     float: left;
@@ -126,6 +127,7 @@ ul.header-menu-ul li:hover {
 .feature div img {
     width: 420px;
     margin-left: 50px;
+    /*visibility: hidden;*/
 }
 .feature ul {
     display: block;
@@ -137,8 +139,55 @@ ul.header-menu-ul li:hover {
 }
 .feature ul li {
     padding: 1.5rem 0;
+    /*visibility: hidden;*/
 }
 
 .feature2 ul {
     margin-left: 0;
+}
+.fadein, .fadein {
+    animation-name: main-block-h1;
+    animation-duration: 1.5s;
+    visibility: visible;
+}
+
+/*钱包*/
+.wallets {
+    background-color: #476cb8;
+    height: 40rem;
+}
+h1.wallet-title {
+    font-size: 5rem;
+    color: white;
+    padding: 2rem;
+}
+#walletList {
+    margin-top: 5rem;
+}
+div.sub-wallet {
+    width:33%;
+    float: left;
+    cursor: pointer;
+}
+div.sub-wallet div.wallet-img {
+    width:20rem;
+    height:20rem;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 3.5rem;
+    position: relative;
+}
+div.sub-wallet div.wallet-img img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+}
+p.wallet-link {
+    position: absolute;
+    left: 0rem;
+    bottom: 1rem;
+    font-size:2rem;
+    width: 20rem;
+    text-align: center;
 }
