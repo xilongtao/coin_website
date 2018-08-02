@@ -1,3 +1,14 @@
+#headerBlock{
+    /*position: absolute;*/
+    /*display:table;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;*/
+    min-height: 500px;
+}
+
 .header-menu {
     height: 80px;
     width: 100%;
@@ -43,11 +54,10 @@ ul.header-menu-ul li:hover {
     color: white;
 }
 
-
-.main-block {
+#headerBlock {
     position: relative;
     z-index: 0;
-    height: 450px;
+    height: 100vh;
     background: linear-gradient(left top ,#020031,#6d3353);
     background: -webkit-linear-gradient(left top ,#020031,#6d3353);
     background: -moz-linear-gradient(left top ,#020031,#6d3353);
@@ -70,6 +80,9 @@ ul.header-menu-ul li:hover {
     padding-top: 150px;
 
     transition: font-size 1s;
+    -webkit-transition: font-size 1s;
+    -moz-transition: font-size 1s;
+    -o-transition: font-size 1s;
 }
 .main-block span:hover {
     font-size: 4.5rem;
@@ -116,6 +129,12 @@ ul.header-menu-ul li:hover {
 }
 
 /*feature*/
+.feature-title {
+    font-size: 5rem;
+    color: #6d3353;
+    padding: 2rem;
+    visibility: hidden;
+}
 .feature {
     margin-top: 50px;
     position: relative;
@@ -145,11 +164,7 @@ ul.header-menu-ul li:hover {
 .feature2 ul {
     margin-left: 0;
 }
-.fadein, .fadein {
-    animation-name: main-block-h1;
-    animation-duration: 1.5s;
-    visibility: visible;
-}
+
 
 /*钱包*/
 .wallets {
@@ -165,7 +180,7 @@ h1.wallet-title {
     margin-top: 5rem;
 }
 div.sub-wallet {
-    width:33%;
+    width:25%;
     float: left;
     cursor: pointer;
 }
@@ -190,4 +205,15 @@ p.wallet-link {
     font-size:2rem;
     width: 20rem;
     text-align: center;
+}
+
+.wallet-title, .sub-wallet {
+    visibility: hidden;
+}
+
+/*放在最下面保持优先级最高*/
+.fadein, .fadein {
+    animation-name: main-block-h1;
+    animation-duration: 1.5s;
+    visibility: visible;
 }

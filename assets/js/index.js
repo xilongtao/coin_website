@@ -1,3 +1,8 @@
+// var h = $("#headerBlock").height();
+// var w = $("#headerBlock").width() + 30;
+// $("#headerBlock").css('height', h + 'px');
+// $("#headerBlock").css('width', w + 'px');
+// $("#headerBlock").css('position', 'static');
 function feature()
 {
     if (!$("#feature").hasClass('animation-added')) {
@@ -14,6 +19,14 @@ function feature2()
         $("#feature2 ul li").addClass("fadein");
     }
 }
+$(".feature-title").waypoint({
+    handler: function () {
+        if (!$(".feature-title").hasClass('fadein')) {
+            $(".feature-title").addClass("fadein");
+        }
+    },
+    offset: 450
+});
 $("#feature").waypoint({
     handler: function(direction) {
         feature();
@@ -24,5 +37,16 @@ $("#feature2").waypoint({
     handler: function(direction) {
         feature2();
     },
-    offset: 650
+    offset: 450
+});
+$(".wallet-container").waypoint({
+    handler: function(direction) {
+        if (!$("h1.wallet-title").hasClass('fadein')) {
+            $("h1.wallet-title").addClass("fadein");
+        }
+        if (!$("div.sub-wallet").hasClass('fadein')) {
+            $("div.sub-wallet").addClass("fadein");
+        }
+    },
+    offset: 400
 });
