@@ -1,3 +1,6 @@
+.footer .list-group-item {
+    border: none;
+}
 #headerBlock{
     /*position: absolute;*/
     /*display:table;
@@ -136,7 +139,6 @@ ul.header-menu-ul li:hover {
     visibility: hidden;
 }
 .feature {
-    margin-top: 50px;
     position: relative;
     visibility: hidden;
 }
@@ -191,6 +193,7 @@ div.sub-wallet div.wallet-img {
     margin: 0 auto;
     padding-top: 3.5rem;
     position: relative;
+    box-shadow: 10px 10px 5px #2a4d94;
 }
 div.sub-wallet div.wallet-img img {
     display: block;
