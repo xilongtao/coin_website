@@ -2,3 +2,15 @@
     padding-left: 0;
     padding-right: 0;
 }
+.my-list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.my-list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    color: white;
+    font-size: 1.8rem;
+}

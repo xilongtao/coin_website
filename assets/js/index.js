@@ -50,3 +50,12 @@ $(".wallet-container").waypoint({
     },
     offset: 400
 });
+
+$(".footer").waypoint({
+    handler: function(direction) {
+        if (!$(".footer").hasClass('fadein')) {
+            $(".footer").addClass("fadein");
+        }
+    },
+    offset: 700
+});

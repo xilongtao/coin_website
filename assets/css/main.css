@@ -214,6 +214,20 @@ p.wallet-link {
     visibility: hidden;
 }
 
+.footer {
+    color: white;
+    visibility: hidden;
+}
+.footer .row {
+    background-color: #331040;
+    padding-top: 4rem;
+}
+.footer .list-group-item {
+    background-color: #331040;
+}
+.footer a.list-group-item {
+    color: white;
+}
 /*放在最下面保持优先级最高*/
 .fadein, .fadein {
     animation-name: main-block-h1;
